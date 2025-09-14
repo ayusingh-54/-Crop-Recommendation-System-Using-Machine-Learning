@@ -9,7 +9,7 @@
 
 **A comprehensive machine learning-powered web application that provides intelligent crop recommendations based on soil and environmental parameters.**
 
-*Helping farmers and agricultural professionals make data-driven decisions for optimal crop selection, maximizing yield and profitability.*
+_Helping farmers and agricultural professionals make data-driven decisions for optimal crop selection, maximizing yield and profitability._
 
 [🚀 Live Demo](#-installation--setup) • [📖 Documentation](#-project-overview) • [🤝 Contributing](#-contributing) • [📧 Contact](#-author)
 
@@ -65,11 +65,13 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 <td width="50%">
 
 ### 🌱 Intelligent Prediction Engine
+
 - **Multi-Algorithm Comparison**: Tested 10 different ML algorithms
 - **Random Forest Model**: Achieved highest accuracy
 - **Real-time Predictions**: Instant crop recommendations
 
 ### 📊 Data Processing
+
 - **Dual-Stage Scaling**: MinMaxScaler + StandardScaler
 - **Feature Engineering**: Intelligent preprocessing
 - **Data Validation**: Input validation and error handling
@@ -78,11 +80,13 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 <td width="50%">
 
 ### 🖥️ User-Friendly Interface
+
 - **Responsive Design**: Bootstrap-powered interface
 - **Intuitive Input Form**: Easy-to-use parameter entry
 - **Visual Results**: Clear crop display with images
 
 ### 🔧 Robust Backend
+
 - **Flask Framework**: Lightweight and scalable
 - **Model Persistence**: Efficient pickle-based storage
 - **Error Handling**: Comprehensive error management
@@ -99,12 +103,12 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 
 <div align="center">
 
-| Metric | Value |
-|--------|-------|
-| **Total Records** | 2,202 agricultural samples |
-| **Features** | 7 environmental/soil parameters |
-| **Target Classes** | 22 different crop types |
-| **Data Quality** | Clean dataset, no missing values |
+| Metric             | Value                            |
+| ------------------ | -------------------------------- |
+| **Total Records**  | 2,202 agricultural samples       |
+| **Features**       | 7 environmental/soil parameters  |
+| **Target Classes** | 22 different crop types          |
+| **Data Quality**   | Clean dataset, no missing values |
 
 </div>
 
@@ -115,6 +119,7 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 <td width="25%">
 
 **Cereals & Grains**
+
 - Rice
 - Maize
 
@@ -122,6 +127,7 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 <td width="25%">
 
 **Fruits**
+
 - Apple
 - Orange
 - Papaya
@@ -137,6 +143,7 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 <td width="25%">
 
 **Legumes**
+
 - Lentil
 - Blackgram
 - Mungbean
@@ -149,6 +156,7 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 <td width="25%">
 
 **Commercial Crops**
+
 - Cotton
 - Jute
 - Coffee
@@ -159,15 +167,15 @@ Our AI-powered system analyzes multiple environmental factors to provide data-dr
 
 ### 📊 Input Parameters
 
-| Parameter | Description | Unit | Range |
-|-----------|-------------|------|-------|
-| **Nitrogen (N)** | Nitrogen content in soil | kg/ha | 0-140 |
-| **Phosphorus (P)** | Phosphorus content in soil | kg/ha | 5-145 |
-| **Potassium (K)** | Potassium content in soil | kg/ha | 5-205 |
-| **Temperature** | Average temperature | °C | 8.8-43.7 |
-| **Humidity** | Relative humidity | % | 14.3-99.9 |
-| **pH** | Soil pH level | - | 3.5-9.9 |
-| **Rainfall** | Annual rainfall | mm | 20.2-298.6 |
+| Parameter          | Description                | Unit  | Range      |
+| ------------------ | -------------------------- | ----- | ---------- |
+| **Nitrogen (N)**   | Nitrogen content in soil   | kg/ha | 0-140      |
+| **Phosphorus (P)** | Phosphorus content in soil | kg/ha | 5-145      |
+| **Potassium (K)**  | Potassium content in soil  | kg/ha | 5-205      |
+| **Temperature**    | Average temperature        | °C    | 8.8-43.7   |
+| **Humidity**       | Relative humidity          | %     | 14.3-99.9  |
+| **pH**             | Soil pH level              | -     | 3.5-9.9    |
+| **Rainfall**       | Annual rainfall            | mm    | 20.2-298.6 |
 
 ---
 
@@ -230,28 +238,32 @@ graph LR
 ### 🔧 Step-by-Step Installation
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/ayusingh-54/crop-recommendation-system.git
    cd crop-recommendation-system
    ```
 
 2. **Create Virtual Environment**
+
    ```bash
    # Windows
    python -m venv .venv
    .venv\Scripts\activate
-   
+
    # Linux/Mac
    python3 -m venv .venv
    source .venv/bin/activate
    ```
 
 3. **Install Dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Run the Application**
+
    ```bash
    python app.py
    ```
@@ -280,6 +292,7 @@ pickle-mixin>=1.0.0
 1. **Access Application**: Open browser and go to `http://127.0.0.1:5000`
 
 2. **Input Parameters**: Fill in all required fields:
+
    - **Nitrogen**: Soil nitrogen content (0-140 kg/ha)
    - **Phosphorus**: Soil phosphorus content (5-145 kg/ha)
    - **Potassium**: Soil potassium content (5-205 kg/ha)
@@ -297,6 +310,7 @@ pickle-mixin>=1.0.0
 <td width="33%">
 
 **High Rainfall Region**
+
 ```
 Nitrogen: 90
 Phosphorus: 42
@@ -313,6 +327,7 @@ Result: Rice ✅
 <td width="33%">
 
 **Arid Climate**
+
 ```
 Nitrogen: 40
 Phosphorus: 50
@@ -329,6 +344,7 @@ Result: Cotton ✅
 <td width="33%">
 
 **Moderate Climate**
+
 ```
 Nitrogen: 60
 Phosphorus: 55
@@ -353,24 +369,24 @@ Result: Maize ✅
 
 <div align="center">
 
-| Metric | Score |
-|--------|-------|
-| **Training Accuracy** | 99% |
-| **Test Accuracy** | 95% |
-| **Cross-Validation Score** | 94% |
-| **F1-Score** | 95% |
+| Metric                     | Score |
+| -------------------------- | ----- |
+| **Training Accuracy**      | 99%   |
+| **Test Accuracy**          | 95%   |
+| **Cross-Validation Score** | 94%   |
+| **F1-Score**               | 95%   |
 
 </div>
 
 ### 📈 Algorithm Comparison Results
 
-| Algorithm | Accuracy | Training Time | Prediction Time |
-|-----------|----------|---------------|----------------|
-| **Random Forest** ⭐ | **95.2%** | 0.15s | 0.001s |
-| Gradient Boosting | 93.8% | 0.45s | 0.002s |
-| Extra Trees | 93.1% | 0.12s | 0.001s |
-| SVM | 91.7% | 0.25s | 0.003s |
-| Decision Tree | 89.3% | 0.08s | 0.001s |
+| Algorithm            | Accuracy  | Training Time | Prediction Time |
+| -------------------- | --------- | ------------- | --------------- |
+| **Random Forest** ⭐ | **95.2%** | 0.15s         | 0.001s          |
+| Gradient Boosting    | 93.8%     | 0.45s         | 0.002s          |
+| Extra Trees          | 93.1%     | 0.12s         | 0.001s          |
+| SVM                  | 91.7%     | 0.25s         | 0.003s          |
+| Decision Tree        | 89.3%     | 0.08s         | 0.001s          |
 
 ### 🔍 Feature Importance Analysis
 
@@ -391,6 +407,7 @@ Potassium   : 6.4%  🧪
 ### 🧩 Core Components
 
 **Flask Application (`app.py`)**
+
 ```python
 @app.route('/')
 def index():
@@ -400,15 +417,15 @@ def index():
 def predict():
     # Extract features from form
     feature_list = [N, P, K, temp, humidity, ph, rainfall]
-    
+
     # Preprocessing pipeline
     single_pred = np.array(feature_list).reshape(1, -1)
     scaled_features = ms.transform(single_pred)
     final_features = sc.transform(scaled_features)
-    
+
     # Prediction
     prediction = model.predict(final_features)
-    
+
     # Return result
     return render_template('index.html', result=result)
 ```
@@ -451,6 +468,7 @@ def predict():
 <td width="50%">
 
 **🌡️ Advanced Features**
+
 - Real-time weather API integration
 - Economic analysis module
 - Yield prediction models
@@ -461,6 +479,7 @@ def predict():
 <td width="50%">
 
 **📱 Platform Expansion**
+
 - Mobile application development
 - Offline prediction capabilities
 - GPS-based location services
@@ -503,6 +522,7 @@ We welcome contributions from the community! Here's how you can help:
 ### 🐛 Reporting Issues
 
 Use the issue tracker for bug reports with:
+
 - Detailed reproduction steps
 - System information
 - Relevant logs and screenshots
@@ -537,13 +557,14 @@ in the Software without restriction...
 
 **Passionate Machine Learning Engineer & Full-Stack Developer**
 
-*Expertise in Machine Learning, AI, Python Development, Web Applications, and Agricultural Technology*
+_Expertise in Machine Learning, AI, Python Development, Web Applications, and Agricultural Technology_
 
 </div>
 
 ### 📞 Get in Touch
 
 Feel free to reach out for:
+
 - 🚀 Project collaborations
 - 💼 Professional opportunities
 - 🤝 Technical discussions
@@ -574,7 +595,7 @@ Feel free to reach out for:
 
 **Made with ❤️ by [Ayush Singh](https://github.com/ayusingh-54)**
 
-*"Empowering farmers with AI-driven agricultural intelligence"* 🌾
+_"Empowering farmers with AI-driven agricultural intelligence"_ 🌾
 
 ---
 
